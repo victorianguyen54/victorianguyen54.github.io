@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Victoria's Vivacious Website</title>
+        <style type="text/css">
+            body {
+                background:  rgba(243, 89, 62, 0.438);
+                color: rgba(221, 62, 34, 0.473);
+                padding: 50px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgba(184, 66, 37, 0.712);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: rgba(184, 66, 37, 0.712);
+                flex: 1;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+                color: rgba(184, 66, 37, 0.712);
+            }
+            .nav-a {
+                text-decoration: none;
+                color: rgb(184, 66, 37);
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+      <div id="all-contents">
+        <nav>
+            <h1>Victoria's Vivacious Website</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                  <a class="nav-a" href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                </ul>
+            </div>
+        </main>
+      </div>
+    </body>
+</html>
