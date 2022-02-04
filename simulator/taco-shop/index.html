@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taco Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 12px solid rgb(248, 112, 164);
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Pet Shop</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Our Family</h3>
+                <div id="menu">
+                    <div id="brown-lionhead" class="rabbit">
+                        <h4> #1 - ChomChom</h4>
+                        <img src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/c/c0/cc0f5366-df0b-5ef1-ba7c-151e5b96b482/565f4a0593a35.image.jpg">
+                        <h4>$45</h4>
+                    </div>
+                    <div id="lionhead" class="rabbit">
+                        <h4>#2 - Chez</h4>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Lionhead_rabbit_Dobby.jpg/1200px-Lionhead_rabbit_Dobby.jpg">
+                        <h4>$45</h4>
+                    </div>
+                    <div id="shi-tzu" class="dog">
+                        <h4>#3 - Bella </h4>
+                        <img src="https://www.petmd.com/sites/default/files/2020-11/picture-of-shih-tzu-dog.jpg">
+                        <h4>$100</h4>
+                    </div>
+                    <div id="orange-tabby" class="cat">
+                        <h4>#4 - Squiggy</h4>
+                        <img src="https://www.rover.com/blog/wp-content/uploads/2020/04/fluffy-orange-cat-pixabay.jpg">
+                        <h4>$100</h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+         $('button').on('click', takeOrder);
+         console.log("u smell");
+         function takeOrder() {
+            var total = 0;
+            var petNumber = prompt('What pet would you like to order?'); // NOTE: the value will be stored as a string
+
+// Use conditional statements to update the value of the total
+// Make sure to additional else if statements for any additional menu items you added in TODO 1
+if (petNumber === '1') {
+    total += 45.00;
+} else if (petNumber === '2') {
+    total += 45.00;
+} 
+else if (petNumber === '3') {
+    total += 100.00;
+}
+else if (petNumber === '4') {
+    total += 100.00;
+}  else {
+    alert('Sorry, you entered an incorrect pet number'); // Let's the user know that they incorrectly entered information
+}
+alert('The total for your order is ' + total + '. We\'ll have it out shortly. Thanks for visiting the pet shop, and have a nice day!');
+         }   
+        </script>
+    </body>
+
+}
+</html>
